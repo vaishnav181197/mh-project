@@ -1,0 +1,65 @@
+
+{% extends "mainpage.html" %}
+{% block nav %}
+
+
+<div class="container">
+
+    <h2 class="about">Meet Us on Social Media</h2>
+
+    <div class="social-media-links">
+
+        <a href="https://www.instagram.com/yourinstagram" target="_blank">
+
+            <i class="fab fa-instagram fa-2x"></i>
+
+        </a>
+
+        <a href="https://wa.me/yourwhatsappnumber" target="_blank">
+
+            <i class="fab fa-whatsapp fa-2x"></i>
+
+        </a>
+
+    </div>
+
+<style>
+
+        .social-media-links {
+
+            display: flex;
+
+            gap: 10px;
+
+        }
+
+
+
+        .social-media-links a {
+
+            color: #000; /* Change color as needed */
+
+            text-decoration: none;
+
+        }
+
+
+
+        .social-media-links i {
+
+            transition: color 0.3s;
+
+        }
+
+
+
+        .social-media-links a:hover i {
+
+            color: #007bff; /* Change to desired hover color */
+
+        }
+    </style>
+    
+</div>
+
+{% endblock nav %} 

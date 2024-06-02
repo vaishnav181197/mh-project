@@ -1,0 +1,885 @@
+ 
+
+
+{% load static %}
+<!doctype html>
+<html lang="en">
+    <head>
+        
+        <title>MARVEL HOMES</title>
+     
+          <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="{% static 'css/style.css'%}" />
+                
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9vE2mgIIX2YHEbGAQpK4K4pO+QvV3BxsC" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9vE2mgIIX2YHEbGAQpK4K4pO+QvV3BxsC" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <!-- <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: rgba(0, 0, 0, 0);
+            } 
+        
+
+
+
+        
+
+                 .list-group-item {
+                    font-size: 0.8rem; /* Adjust as needed */
+                }
+
+           
+                    .navbar {
+                        /* background-image: url("{% static 'images/MAINPAGE3.jpg' %}"); */
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        z-index: 1000; /* Ensure the navbar is above other content */
+                        position: absolute;
+                        display: flex; /* Use flexbox for layout */
+                        justify-content: space-between; /* Space between brand and nav items */
+                        width: 100%; /* Full width */
+                        padding: 10px 20px; /* Add padding for spacing */
+                        }
+
+                    .navbar-nav .nav-link {
+                        color: white;
+                        font-weight: bold;
+                    }
+
+                    .navbar-nav .nav-link:hover {
+                        color: lightgray;
+                    }
+
+                    .navbar-brand img {
+                        height: 50px; 
+                        margin-left: 30px;
+                }
+
+                .dropdown-menu {
+                    background-color: white; /* White background */
+                    color: black; /* Black text */
+                }
+
+                .dropdown-item {
+                    color: black; /* Black text for dropdown items */
+                }
+
+                .dropdown-item:hover {
+                    background-color: #f8f9fa; /* Light grey background on hover */
+                    color: black; /* Keep text black on hover */
+                }
+                .explore{
+                    text-align: center;
+                    color: black;
+                    size: 30px;
+                    font-weight: 400(normal);
+                    letter-spacing: 5px;
+                    margin-bottom: 16px;
+                   
+                }
+                
+
+            
+            
+   
+
+           
+
+            .full-bg-image {
+                background-image: url("{% static 'images/MAINPAGE3.jpg' %}");
+                background-size: cover;
+                background-position: center -50px; /* Adjust the -50px value to move the image upwards */
+                background-repeat: no-repeat;
+                height: 100vh; /* Full viewport height */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                text-align: center;
+            }
+
+            h1 {
+                text-align: center;
+                color: white;
+                font-weight: 300;
+                font-size: 60px;
+                letter-spacing: 10px;
+                font-family: "Jost", sans-serif;
+                text-transform: uppercase;
+            }
+
+            h6 {
+                text-align: center;
+                color: white;
+                letter-spacing: 10px;
+                font-family: "Jost", sans-serif;
+            }
+
+            span {
+                font-size: small;
+                text-align: center;
+                color: white;
+                font-size: 16px;
+                font-weight: 200(lighter);
+                font-style: italic;
+                letter-spacing: 1px;
+            }
+            .projects{
+                text-align: center;
+                color:black;
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: 400(normal);
+                line-height: 1.5em;
+                letter-spacing: 5px;
+            }
+
+            
+            h2 {
+                text-align: center;
+                color: black;
+                font-size: 30px;
+                font-weight: 400(normal);
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                text-shadow: 10;
+            }
+
+           
+            .listing-box {
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+                font-family: Roboto, sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                text-align: center;
+                width: 662px;
+            }
+
+            .listing-tag {
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                text-decoration: none;
+                letter-spacing: 6px;
+                font-weight: bold;
+                transition: background-color 0.3s, color 0.3s;
+                border: 1px solid rgba(255, 255, 255, 0.5); /* Adding a border */
+            }
+
+            .listing-tag:hover {
+                background-color: white;
+                color: black;
+                border: 1px solid rgba(255, 255, 255, 0.8); /* Changing the border color on hover */
+            }
+
+            @media (max-width: 768px) {
+                h1 {
+                    font-size: 40px;
+                    letter-spacing: 5px;
+                }
+
+                h6 {
+                    letter-spacing: 5px;
+                }
+
+                .listing-box {
+                    width: 80%;
+                    padding: 15px;
+                }
+
+                .navbar-brand img {
+                    height: 50px; /* Smaller logo for small screens */
+                }
+            }
+
+            @media (max-width: 576px) {
+                h1 {
+                    font-size: 30px;
+                    letter-spacing: 2px;
+                }
+
+                .listing-box {
+                    width: 100%;
+                    padding: 10px;
+                }
+                .navbar-brand img {
+                height: 30px; /* Even smaller logo for very small screens */
+              }
+             
+              
+            }
+
+            
+        </style> -->
+
+
+
+    </head>
+    
+
+     <body>
+
+        {% include 'inc/navbar.html' %} 
+
+
+
+
+
+
+        <!-- <header>
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="{% static 'images/whitelogo.PNG' %}" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProperties" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                PROPERTIES
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownProperties">
+                                <li><a class="dropdown-item" href="#">APARTMENTS</a></li>
+                                <li><a class="dropdown-item" href="#">VILLAS</a></li>
+                                <li><a class="dropdown-item" href="#">TOWNHOUSES</a></li>
+                                <li><a class="dropdown-item" href="#">SEE ALL THE PROPERTIES</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDevelopers" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                DEVELOPERS
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownDevelopers">
+                                <li><a class="dropdown-item" href="#">EMAAR</a></li>
+                                <li><a class="dropdown-item" href="#">MERAAS</a></li>
+                                <li><a class="dropdown-item" href="#">DAMAAC</a></li>
+                                <li><a class="dropdown-item" href="#">SEE ALL DEVELOPERS IN DUBAI</a></li>
+                            </ul>
+                        </li>
+                      
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT</a>
+                        </li>
+                        
+
+                    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">NEWS</a>
+                        </li>
+                       
+                    </ul> 
+                </div>
+            </div>
+        </nav>
+        </header> -->
+        
+        <div class="full-bg-image">
+            <div>
+                <h6>WELCOME TO</h6>
+                <h1>MARVEL HOMES</h1>
+                <br>
+                <span>BUY BETTER, SELL FASTER</span>
+               
+
+                <div class="listing-box">
+                    <a href="{% url 'listing' %}" class="listing-tag">VIEW ALL LISTINGS</a> 
+                 </div>
+            </div>
+        </div>
+       
+     
+        <section style="height: 50px; background-color: white;">
+        </section> 
+
+        <!-- <"Explore the Properties" section  -->
+        <section>
+            <div class="container">
+                <h2 class="text-center mt-5">Explore the Properties</h2>
+            </div>
+            <br>
+            <div class="container">
+                <div class="projects">PROJECTS</div>
+            </div>
+            <br>
+            <br> 
+        
+
+       
+        </section> 
+    
+        <!-- Books section -->
+         <section>
+          
+        </section>
+    
+    
+
+      
+          <section> 
+
+
+
+
+
+
+                 <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card mb-4">
+                                <img src="{% static 'images/samaezdan.jpg' %}" class="card-img-top" alt="Logo">
+                                <div class="card-body">
+                                    <p class="card-text">APARTMENTS</p>
+                                    <h3 class="card-title">Sama Ezdan<br>SEA VIEW RESIDENCE<br>STARTING PRICE AED 1,634,834</h3>
+                                  
+                                    <div class="d-flex justify-content-between button-gap mt-1">
+                                        <a href="#" class="btn btn-dark">Card link</a>
+                                        <a href="#" class="btn btn-dark">Another link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Add two more similar card divs for the other two cards in the first row -->
+        
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card mb-4">
+                                <img src="{% static 'images/samaezdan.jpg' %}" class="card-img-top" alt="Logo">
+                                <div class="card-body">
+                                    <p class="card-text">APARTMENTS</p>
+                                    <h3 class="card-title">Sama Ezdan<br>SEA VIEW RESIDENCE<br>STARTING PRICE AED 1,634,834</h3>
+                                   
+                                    <div class="d-flex justify-content-between button-gap mt-1">
+                                        <a href="#" class="btn btn-dark">Card link</a>
+                                        <a href="#" class="btn btn-dark">Another link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Add two more similar card divs for the other two cards in the first row -->
+        
+                         <div class="col-lg-4 col-md-6">
+                            <div class="card mb-4">
+                                <img src="{% static 'images/samaezdan.jpg' %}" class="card-img-top" alt="Logo">
+                                <div class="card-body">
+                                    <p class="card-text">APARTMENTS</p>
+                                    <h3 class="card-title">Sama Ezdan<br>SEA VIEW RESIDENCE<br>STARTING PRICE AED 1,634,834</h3>
+                                  
+                                    <div class="d-flex justify-content-between button-gap mt-1">
+                                        <a href="#" class="btn btn-dark">Card link</a>
+                                        <a href="#" class="btn btn-dark">Another link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+        
+                     <!-- Add two more similar card divs for the other two cards in the first row -->
+                    </div>
+                </div>
+            
+        
+        </section>
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card mb-4">
+                            <img src="{% static 'images/samaezdan.jpg' %}" class="card-img-top" alt="Logo">
+                            <div class="card-body">
+                                <p class="card-text">APARTMENTS</p>
+                                <h3 class="card-title">Sama Ezdan<br>SEA VIEW RESIDENCE<br>STARTING PRICE AED 1,634,834</h3>
+                               
+                                <div class="d-flex justify-content-between button-gap mt-1">
+                                    <a href="#" class="btn btn-dark">Card link</a>
+                                    <a href="#" class="btn btn-dark">Another link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                     <!-- Add two more similar card divs for the other two cards in the first row --> 
+    
+                     <div class="col-lg-4 col-md-6">
+                        <div class="card mb-4">
+                            <img src="{% static 'images/samaezdan.jpg' %}" class="card-img-top" alt="Logo">
+                            <div class="card-body">
+                                <p class="card-text">APARTMENTS</p>
+                                <h3 class="card-title">Sama Ezdan<br>SEA VIEW RESIDENCE<br>STARTING PRICE AED 1,634,834</h3>
+                                
+                                <div class="d-flex justify-content-between button-gap mt-1">
+                                    <a href="#" class="btn btn-dark">Card link</a>
+                                    <a href="#" class="btn btn-dark">Another link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Add two more similar card divs for the other two cards in the first row -->
+    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card mb-4">
+                            <img src="{% static 'images/samaezdan.jpg' %}" class="card-img-top" alt="Logo">
+                            <div class="card-body">
+                                <p class="card-text">APARTMENTS</p>
+                                <h3 class="card-title"><b>Sama Ezdan</b><br>SEA VIEW RESIDENCE<br>STARTING PRICE AED 1,634,834</h3>
+                               
+                                <div class="d-flex justify-content-between button-gap mt-1 ">
+                                    <a href="#" class="btn btn-dark custom-gap">Card link</a><br>
+                                    <a href="#" class="btn btn-dark">Another link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    
+    
+                    <!-- Add two more similar card divs for the other two cards in the first row -->
+                 </div>
+            </div> 
+
+            
+        </section>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+
+
+
+
+        <section>
+
+            <div class="container mt-4 mb-4">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card1">
+                            <img class="card-img-top" src="{% static 'images/samaezdan.jpg' %}" alt="Card image cap">
+                            <div class="card-title">Title</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card1">
+                            <img class="card-img-top" src="{% static 'images/samaezdan.jpg' %}" alt="Card image cap">
+                            <div class="card-title">Title</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card1">
+                            <img class="card-img-top" src="{% static 'images/samaezdan.jpg' %}" alt="Card image cap">
+                            <div class="card-title">Title</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+            <style>
+                .card1 {
+                        overflow: hidden;
+                        position: relative;
+                    }
+
+                    .card1 .card-img-top {
+                        height: 300px;
+                        transition: transform 1.3s ease;
+                        object-fit: cover;
+                    }
+
+                    .card1:hover .card-img-top {
+                        transform: scale(1.1); /* Increase the scale factor as needed */
+                    }
+
+                    .card1 .card-title {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        color: white; /* Adjust the color as needed */
+                        text-align: center;
+                        font-size: 24px; /* Adjust the font size as needed */
+                        font-weight: bold; /* Adjust the font weight as needed */
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow for better visibility */
+                    }
+            </style>
+            
+            <div class="container mt-4 mb-4">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card1">
+                            <img class="card-img-top" src="{% static 'images/samaezdan.jpg' %}" alt="Card image cap">
+                            <div class="card-title">Title</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card1">
+                            <img class="card-img-top" src="{% static 'images/samaezdan.jpg' %}" alt="Card image cap">
+                            <div class="card-title">Title</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card1">
+                            <img class="card-img-top" src="{% static 'images/samaezdan.jpg' %}" alt="Card image cap">
+                            <div class="card-title">Title</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              
+  
+               
+        </section>
+        <section>
+            <style>
+                .full-screen-section {
+                    height: 100vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-size: cover;
+                    background-position: center;
+                }
+                .left-section {
+                    background-image: url("{% static 'images/forsellers.jpg' %}");
+                    padding: 2rem;
+                    color: white;
+                }
+                .right-section {
+                    background-image: url("{% static 'images/forbuyers.jpg' %}");
+                    padding: 2rem;
+                    color: white;
+                }
+                .btn-custom {
+                    border: 1px solid white;
+                    color: white;
+                    text-transform: uppercase;
+                }
+
+                .btn-custom:hover {
+                    background-color: white;
+                    color: black;
+                }
+                .sel{
+                    color: white;
+                }
+            </style>
+                 <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 full-screen-section left-section">
+                            <div class="text-center">
+                                <h2 class="sel">For Sellers</h2>
+                                <h3>Are You Selling Your Home?</h3>
+                                <button class="btn btn-custom" ng-click="getEstimation()">Get Estimation</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 full-screen-section right-section">
+                            <div class="text-center">
+                                <h2 class="sel">For Buyers</h2>
+                                <h3>Request for Latest Transaction Report in Your Area</h3>
+                                <a href="{% url 'listing' %}" class="listing-tag">GET A FREE REPORT</a>
+                                <!-- <button class="btn btn-custom" href="{% url 'listing' %}" ng-click="getReport()">Get a Free Report</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+                <script>
+                    angular.module('realEstateApp', [])
+                    .controller('MainController', function($scope) {
+                        $scope.getEstimation = function() {
+                            alert("Estimation button clicked!");
+                        };
+                        $scope.getReport = function() {
+                            alert("Report button clicked!");
+                        };
+                    });
+                </script>
+
+        </section>
+        <div class="break">
+            <br>
+            <br>
+            <br>
+            <style>
+                .break{
+                    background-color: white
+                }
+            </style>
+            
+        </div>
+        
+        <section class="cors1">
+            <style>
+                .cors{
+                    text-align: center;
+                    letter-spacing: 6px;
+                    text-transform: uppercase;
+                    font-family: "Jost", sans-serif;
+                    
+                }.cors1{
+                    background-color: white;
+
+                }
+            </style>
+
+            
+               
+            <h3 class="cors">OUR PARTNERS</h3>
+
+
+
+                <style>
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+              }
+              
+              body {
+                background: #f2f2f2;
+              }
+              
+              @keyframes slide {
+                from {
+                  transform: translateX(0);
+                }
+                to {
+                  transform: translateX(-100%);
+                }
+              }
+              
+              .logos {
+                overflow: hidden;
+                padding: 60px 0;
+                background: white;
+                white-space: nowrap;
+                position: relative;
+              }
+              
+              .logos:before,
+              .logos:after {
+                position: absolute;
+                top: 0;
+                width: 250px;
+                height: 100%;
+                content: "";
+                z-index: 2;
+              }
+              
+              .logos:before {
+                left: 0;
+                background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+              }
+              
+              .logos:after {
+                right: 0;
+                background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+              }
+              
+              .logos:hover .logos-slide {
+                animation-play-state: paused;
+              }
+              
+              .logos-slide {
+                display: inline-block;
+                animation: 35s slide infinite linear;
+              }
+              
+              .logos-slide img {
+                height: 50px;
+                margin: 0 40px;
+              }
+</style>
+
+  
+    <div class="logos">
+      <div class="logos-slide">
+        <img src="{% static 'images/forbuyers.jpg' %}" />
+        <img src="{% static 'images/forbuyers.jpg' %}" />
+        <img src="{% static 'images/forbuyers.jpg' %}" />
+        <img src="./logos/barstool-store.svg" />
+        <img src="./logos/budweiser.svg" />
+        <img src="./logos/buzzfeed.svg" />
+        <img src="./logos/forbes.svg" />
+        <img src="./logos/macys.svg" />
+        <img src="./logos/menshealth.svg" />
+        <img src="./logos/mrbeast.svg" />
+      </div>
+
+      <div class="logos-slide">
+        <img src="./logos/3m.svg" />
+        <img src="./logos/barstool-store.svg" />
+        <img src="./logos/budweiser.svg" />
+        <img src="./logos/buzzfeed.svg" />
+        <img src="./logos/forbes.svg" />
+        <img src="./logos/macys.svg" />
+        <img src="./logos/menshealth.svg" />
+        <img src="./logos/mrbeast.svg" />
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+        </section>
+        <section>
+
+                <style>*{ 
+                    padding: 0; 
+                    margin: 0; 
+                    box-sizing: border-box; 
+                } 
+                footer{ 
+                    background-color: #111; 
+                } 
+                .footerContainer{ 
+                    width: 100%; 
+                    padding: 70px 30px 20px ; 
+                } 
+                .socialIcons{ 
+                    display: flex; 
+                    justify-content: center; 
+                } 
+                .socialIcons a{ 
+                    text-decoration: none; 
+                    padding:  10px; 
+                    background-color: white; 
+                    margin: 10px; 
+                    border-radius: 50%; 
+                } 
+                .socialIcons a i{ 
+                    font-size: 2em; 
+                    color: black; 
+                    opacity: 0,9; 
+                } 
+                /* Hover affect on social media icon */ 
+                .socialIcons a:hover{ 
+                    background-color: #111; 
+                    transition: 0.5s; 
+                } 
+                .socialIcons a:hover i{ 
+                    color: white; 
+                    transition: 0.5s; 
+                } 
+                .footerNav{ 
+                    margin: 30px 0; 
+                } 
+                .footerNav ul{ 
+                    display: flex; 
+                    justify-content: center; 
+                    list-style-type: none; 
+                } 
+                .footerNav ul li a{ 
+                    color:white; 
+                    margin: 20px; 
+                    text-decoration: none; 
+                    font-size: 1.3em; 
+                    opacity: 0.7; 
+                    transition: 0.5s; 
+                 
+                } 
+                .footerNav ul li a:hover{ 
+                    opacity: 1; 
+                } 
+                .footerBottom{ 
+                    background-color: #000; 
+                    padding: 20px; 
+                    text-align: center; 
+                } 
+                .footerBottom p{ 
+                    color: white; 
+                } 
+                .designer{ 
+                    opacity: 0.7; 
+                    text-transform: uppercase; 
+                    letter-spacing: 1px; 
+                    font-weight: 400; 
+                    margin: 0px 5px; 
+                } 
+                @media (max-width: 700px){ 
+                    .footerNav ul{ 
+                        flex-direction: column; 
+                    }  
+                    .footerNav ul li{ 
+                        width:100%; 
+                        text-align: center; 
+                        margin: 10px; 
+                    } 
+                    .socialIcons a{ 
+                        padding: 8px; 
+                        margin: 4px; 
+                    } 
+                }</style>
+
+           
+          
+                <footer> 
+                <div class="footerContainer"> 
+                    <div class="socialIcons"> 
+                        <a href=""><i class="fa-brands fa-facebook"></i></a> 
+                        <a href=""><i class="fa-brands fa-instagram"></i></a> 
+                        <a href=""><i class="fa-brands fa-twitter"></i></a> 
+                        <a href=""><i class="fa-brands fa-google-plus"></i></a> 
+                        <a href=""><i class="fa-brands fa-youtube"></i></a> 
+                    </div> 
+                    <!-- <div class="footerNav"> 
+                        <ul><li><a href="">Home</a></li> 
+                            <li><a href="">News</a></li> 
+                            <li><a href="">About</a></li> 
+                            <li><a href="">Contact Us</a></li> 
+                            <li><a href="">our Team</a></li> 
+                        </ul> 
+                    </div>  -->
+                     
+                </div> 
+                <div class="footerBottom"> 
+                    <p>© Marvel Homes - All Rights Reserved <span class="designer"></span></p> 
+                </div> 
+            </footer> 
+          
+
+
+        </section>
+    </body>
+</html>
