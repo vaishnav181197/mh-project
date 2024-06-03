@@ -19,12 +19,12 @@
 
    
             .navbar {
-                /* background-image: url("{% static 'images/MAINPAGE3.jpg' %}"); */
+                background-image: url("{% static 'images/MAINPAGE3.jpg' %}");
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
                 z-index: 1000; /* Ensure the navbar is above other content */
-                position: absolute;
+                position: relative;
                 display: flex; /* Use flexbox for layout */
                 justify-content: space-between; /* Space between brand and nav items */
                 width: 100%; /* Full width */
@@ -219,7 +219,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">HOME</a>
+                        <a class="nav-link" href="{% url '' %}">HOME</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProperties" role="button" data-bs-toggle="dropdown" aria-expanded="false">

@@ -250,6 +250,7 @@
 
         {% include 'inc/navbar.html' %} 
 
+        {% block nav %}
 
 
 
@@ -852,6 +853,7 @@
                     } 
                 }</style>
 
+
            
           
                 <footer> 
@@ -881,5 +883,7 @@
 
 
         </section>
+
+        {% endblock nav %}
     </body>
 </html>
